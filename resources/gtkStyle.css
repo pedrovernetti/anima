@@ -1,0 +1,134 @@
+
+*
+{
+    /* color: rgba(247, 247, 247, 1); */
+    /* font-family: "Robotto", Ubuntu, sans-serif; */
+    box-shadow: none;
+}
+
+*:focus
+{
+   outline: solid rgba(247, 247, 247, 1) 1px;
+}
+
+#footer
+{
+    background: rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+#currentMediaTitle
+{
+    font-size: 90%;
+    margin-top: 5px;
+}
+
+#currentMediaAlbum, #currentMediaArtist
+{
+    font-size: 80%;
+    opacity: 0.5;
+}
+
+#currentMediaArtist
+{
+    margin-bottom: 5px;
+}
+
+/* ******************************** BUTTONS ******************************** */
+
+button
+{
+    border-radius: 50%;
+}
+
+button:not(#playPauseButton)
+{
+    border: none;
+    background: transparent;
+    padding: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#playPauseButton
+{
+    border: none;
+    font-size: 150%;
+    background: rgba(44, 160, 137, 0.5);
+    padding: 0px;
+}
+
+#playPauseButton:hover, #playPauseButton:focus
+{
+    background: rgba(44, 160, 137, 1.0);
+    outline: none;
+}
+
+/* current font makes those symbols too small */
+#previousButton, #nextButton, #shuffleButton, #repeatButton, #exitTimerButton, #settingsButton
+{
+    font-size: 110%;
+}
+
+#previousButton, #nextButton, #shuffleButton, #repeatButton
+{
+    margin: 0px;
+}
+
+/* LEFT HERE FOR DEBUGGING. TODO: REMOVE ME */
+#footerLeftCorner, #footerRightCorner
+{
+    background: rgba(255, 0, 0, 0.0);
+}
+
+#footerRightCorner button
+{
+    padding: 5px;
+    margin-left: 5px;
+}
+
+button:not(#playPauseButton):hover, button:not(#playPauseButton):focus
+{
+    outline: none;
+    color: rgba(44, 160, 137, 0.5);
+    text-shadow: 0px 0px 1px rgba(44, 160, 137, 1.0);
+}
+
+button:not(#playPauseButton):active
+{
+    color: rgba(44, 160, 137, 1.0);
+    text-shadow: 0px 0px 1px rgba(44, 160, 137, 1.0);
+}
+
+/* ******************************** SCALES ********************************* */
+
+scale:hover trough slider, scale:focus trough slider
+{
+    background: #F7F7F7;
+    border: solid #F7F7F7 1px;
+}
+
+scale trough
+{
+    border: solid transparent 1px;
+}
+
+scale trough highlight
+{
+    background: #F7F7F7;
+    border: solid transparent 1px;
+}
+
+scale:hover trough highlight, scale:focus trough highlight
+{
+    background: rgba(44, 160, 137, 1.0);
+}
+
+scale:not(:hover) trough slider
+{
+    background: transparent;
+    border: solid transparent 1px;
+}
